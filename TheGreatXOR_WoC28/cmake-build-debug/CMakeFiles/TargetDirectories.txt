@@ -1,0 +1,3 @@
+/Users/VAN/CLionProjects/TheGreatXOR_WoC28/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/VAN/CLionProjects/TheGreatXOR_WoC28/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/VAN/CLionProjects/TheGreatXOR_WoC28/cmake-build-debug/CMakeFiles/TheGreatXOR_WoC28.dir

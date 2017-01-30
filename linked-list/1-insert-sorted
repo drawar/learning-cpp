@@ -1,0 +1,56 @@
+// Task: Insert a node into a sorted linked list
+
+#include <iostream>
+#include <cstddef>
+
+using namespace std;
+
+struct Node{
+    int _data;
+    Node* _next;
+    Node(){
+        _next = NULL;
+    }
+    Node(int data){
+        _data = data;
+        _next = NULL;
+    }
+    Node(int data, Node* next){
+        _data = data;
+        _next = next;
+    }
+};
+
+
+//reference to pointer as head needs to be modified
+void insertSorted(Node*& head, int data) {
+    Node *newNode = new Node(data);
+    if (head == NULL || data < head->_data ){
+        newNode->_next = head;
+        head = newNode;
+    }
+    else {
+        Node* cur = head;
+        while (cur->_next != NULL && cur->_next->_data < data)
+            cur = cur->next;
+        newNode->_next = cur->_next;
+        cur->_next = newNode;
+    }
+}
+
+void print(Node *h){
+    while(h){
+        cout << h->_data << endl;
+        h = h->_next;
+    }
+}
+
+}
+
+int main()
+{
+    Node* head = new Node(2);
+    sortedInsert(head,1);
+    print(head);
+    return 0;
+}

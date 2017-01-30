@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/VAN/CLionProjects/TheGreatXOR_WoC28/main.cpp
+iostream
+-
+cmath
+-
+cstdlib
+-
+cstddef
+-
+iostream
+-
+cstddef
+-
+
